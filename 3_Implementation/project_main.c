@@ -24,6 +24,7 @@ int no_of_contacts=0;
 int main()
 {
     int choice;
+    char unkown;
     char f_name[30];
     printf("\t\t\t\t-------------PHONEBOOK MANAGEMENT SYSTEM---------------\n\n\n\n");
 first: printf("\t\t\t\tList of operations\n\n");
@@ -71,7 +72,7 @@ first: printf("\t\t\t\tList of operations\n\n");
       }
       printf("\n\nPress any key to continue to Menu\n");
       __fpurge(stdin);
-      getchar();
+      unkown=getchar();
       goto first;
       return 1;
 }
