@@ -175,13 +175,13 @@ int searches(int no,char *f_name)
 void display(int n)
 {
     printf("\nNAME: %s %s",contact[n]->first_name,contact[n]->last_name);
-    fflush(stdin);
+    __fpurge(stdin);
     printf("\nPhone number: %lld",(contact[n]->phone_number));
-    fflush(stdin);
+    __fpurge(stdin);
     printf("\nGender:%s",contact[n]->gender);
-    fflush(stdin);
+    __fpurge(stdin);
     printf("\nEmail ID:%s",contact[n]->email_id);
-    fflush(stdin);
+    __fpurge(stdin);
 }
 
 //Enter the contact information
