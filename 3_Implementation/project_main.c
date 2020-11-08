@@ -70,7 +70,7 @@ first: printf("\t\t\t\tList of operations\n\n");
                   goto first;//return to enter choice
       }
       printf("\n\nPress any key to continue to Menu\n");
-	  fflush(stdin);
+      __fpurge(stdin);
       getchar();
       goto first;
       return 1;
